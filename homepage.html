@@ -3,13 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Countries</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Contactos</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/homepage.css" rel="stylesheet">
   </head>
   <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/#" alt="IPLeiria" width="30" height="24">
+          </a>
+        
+            <div class="navbar-nav ml-auto" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Países</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Sobre</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+      <div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+          <div class="search">
+            <input class="search_input" type="text" name="" placeholder="Search here...">
+            <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+          </div>
+        </div>
+      </div>
 
     <h1>Hello, world!</h1>
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--Carrosel de imagens-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row align-items-center" style="min-height: 400px;">
+            <div class="col-md-6 ps-5">
+              <h1>Japão</h1>
+              <p>Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova Iorque às antigas ruinas de Roma,
+                cada imagem revela um lugar à espera de ser explorado.
+              </p>
+              <br>
+              <p>Quer seja para aventura, relaxante ou descoberta, encontra o teu proximo  destino conosco</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="assets/img/japao.png" class="img-fluid" alt="Japão">
+            </div>
+          </div>
+        </div>
+        <!--<div class="carousel-item">
+          <div class="row align-items-center" style="min-height: 400px;">
+            <div class="col-md-6 ps-5">
+              <h1>Segundo Slide</h1>
+              <p>Descrição do segundo slide. Adicione conteúdo relevante aqui.</p>
+              <a href="#" class="btn btn-primary">Descubra mais</a>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="assets/img/php.png" class="img-fluid" alt="PHP">
+            </div>
+          </div>
+        </div>-->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+    
+    
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

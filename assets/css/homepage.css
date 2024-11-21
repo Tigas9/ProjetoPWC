@@ -1,0 +1,58 @@
+.carousel-inner img{
+  width: 50%;
+}
+
+
+
+/*usar os seletores para definir o tamanho do carrosel*/
+.carousel-item {
+    display: none;
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #ededed;
+}
+
+
+.carousel-inner {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #ededed;
+}
+
+.carousel-text {
+    flex: 1; /* O texto ocupa 50% do espaço */
+    padding-left: 3rem;
+}
+
+.carousel-image {
+    flex: 1; /* A imagem ocupa os outros 50% */
+    text-align: center;
+    padding-right: 3rem;
+}
+
+.carousel-image img {
+    max-width: 100%; /* A imagem não ultrapassa o container */
+    height: auto; /* Proporções da imagem preservadas */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto; /* Ajustar o tamanho do botão para não ocupar largura desnecessária */
+  margin: 0;
+  padding: 10px; /* Ajustar o tamanho do botão para não ficar grande demais */
+}
+
+.carousel-control-prev {
+  left: -10px; /*Botão para mais perto da borda esquerda */
+}
+
+.carousel-control-next {
+  right: -10px; /*Botão para mais perto da borda direita */
+}
+
+/* Para garantir que os botões fiquem centralizados verticalmente */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 20px;
+  width: 20px;
+}
+
