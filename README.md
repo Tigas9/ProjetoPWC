@@ -3,9 +3,9 @@
 ## Grupo de Projeto: PL2-K
 
 ### Integrantes:
-- **Isabel Costa**
-- **Gonçalo Caldeira**
-- **Tiago Justino**
+- **Gonçalo Caldeira** - 2231687
+- **Isabel Costa** - 2231698
+- **Tiago Justino** - 2231677
 
 ### Turno Práticolaboratorial:
 - **PL2**
