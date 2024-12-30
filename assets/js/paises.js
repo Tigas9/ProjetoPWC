@@ -113,4 +113,12 @@ function displayCountries(arrayCountries){
             localStorage.setItem("favoritos", JSON.stringify(favoritos));
         }
     }
+
+    function toggleFavorito(countryCode) {
+        if (checkFavorito(countryCode)) {
+            removeFavorito(countryCode);
+        } else {
+            addFavorito(countryCode);
+        }
+    }
 }
