@@ -91,9 +91,17 @@ function displayCountries(arrayCountries){
         var favoritos = localStorage.getItem("favoritos");
         return favoritos ? JSON.parse(favoritos) : [];
     }
-
-        function checkFavorito(countryCode) {
+  
+    function checkFavorito(countryCode) {
         var favoritos = getFavoritos();
         return favoritos.includes(countryCode);
+    }
+    
+    function addFavorito(countryCode) {
+        var favoritos = getFavoritos();
+        if (!favoritos.includes(countryCode)) {
+            favoritos.push(countryCode);
+            localStorage.setItem("favoritos", JSON.stringify(favoritos));
+        }
     }
 }
