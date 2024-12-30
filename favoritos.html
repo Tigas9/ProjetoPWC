@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Favoritos</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/paises.css" rel="stylesheet">
+    <link href="assets/css/favoritos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -28,9 +27,6 @@
               <a class="nav-link active" href="favoritos.html">Favoritos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="loja.html">Loja</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
@@ -41,31 +37,28 @@
       </div>
     </nav>
 
-    <br>
     <div class="container container-fluid">
-      <h3>Países Favoritos</h3>
+      <h2>Meus Favoritos</h2>
 
-      <!-- Exibição dos países favoritos -->
-      <div class="row row-cols-1 row-cols-md-3 mb-3" id="lista-favoritos">
-        <!-- Países favoritos serão inseridos aqui -->
+      <div class="row" id="lista-favoritos">
+        <!-- Lista de Países Favoritos -->
       </div>
     </div>
 
-    <!-- Footer -->
     <footer class="py-4 mt-5 border-top bg-light">
       <div class="container text-center">
         <img src="assets/img/ipl.png" alt="Politécnico de Leiria" class="mb-3" style="max-width: 150px;">
         <ul class="nav justify-content-center mb-3">
           <li class="nav-item"><a href="homepage.html" class="nav-link px-2 text-dark">Home</a></li>
           <li class="nav-item"><a href="paises.html" class="nav-link px-2 text-dark">Países</a></li>
-          <li class="nav-item"><a href="loja.html" class="nav-link px-2 text-dark">Loja</a></li>
+          <li class="nav-item"><a href="favoritos.html" class="nav-link px-2 text-dark">Favoritos</a></li>
           <li class="nav-item"><a href="sobre.html" class="nav-link px-2 text-dark">Sobre</a></li>
           <li class="nav-item"><a href="contactos.html" class="nav-link px-2 text-dark">Contactos</a></li>
         </ul>
         <div class="d-flex justify-content-center mb-3">
-          <a href="#" class="mx-2 text-dark"><i class="bi bi-linkedin"></i></a>
-          <a href="#" class="mx-2 text-dark"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="mx-2 text-dark"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="mx-2 text-dark"><i class="bi bi-linkedin" ></i></a>
+          <a href="#" class="mx-2 text-dark"><i class="bi bi-facebook" ></i></a>
+          <a href="#" class="mx-2 text-dark"><i class="bi bi-instagram" ></i></a>
           <a href="#" class="mx-2 text-dark"><i class="bi bi-x"></i></a>
         </div>
         <p class="text-muted">&copy; 2024 Direitos de Autor, Todos os direitos reservados</p>
@@ -73,4 +66,7 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/favoritos.js"></script>
+  </body>
+</html>
