@@ -87,6 +87,12 @@ function displayCountries(arrayCountries){
         listaCountries.append(countryCard);
     });
 
+    $(".toggle-favorito").on("click", function () {
+        var countryCode = $(this).data("country-code");
+        toggleFavorito(countryCode);
+        fetchCountries(); //Atualiza a lista de países após a alteração da lista de favoritos
+    });
+
     function getFavoritos() {
         var favoritos = localStorage.getItem("favoritos");
         return favoritos ? JSON.parse(favoritos) : [];
