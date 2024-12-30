@@ -1,6 +1,6 @@
 var api_url = "https://restcountries.com/v3.1/";
 
-// AO carregar a página
+//AO carregar a página
 $(document).ready(function () {
     fetchCountries();
     $("#button-pesquisar").on("click", function () {
@@ -69,7 +69,7 @@ function displayCountry(arrayCountry) {
     $(".toggle-favorito").on("click", function () {
         var countryCode = $(this).data("country-code");
         toggleFavorito(countryCode);
-        fetchCountries(); // Atualiza a lista de países após a modificação dos favoritos.
+        fetchCountries(); //Atualiza a lista de países após a alteração da lista de favoritos
     });
 }
 
@@ -102,7 +102,7 @@ function displayCountries(arrayCountries) {
     $(".toggle-favorito").on("click", function () {
         var countryCode = $(this).data("country-code");
         toggleFavorito(countryCode);
-        fetchCountries(); //Atualiza a lista de países após alteração na lista de favoritos
+        fetchCountries(); //Atualiza a lista de países após a alteração da lista de favoritos
     });
 }
 
