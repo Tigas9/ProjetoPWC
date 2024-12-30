@@ -36,6 +36,7 @@ O projeto consiste na implementação de um **portal online de merchandising reg
 - **JavaScript**
 - **Bootstrap** (Framework CSS para o layout)
 - **VSCode** (Editor de código utilizado)
+- **API REST Countries**
 
 ## Link para o Repositório GitHub:
 [Projeto PWC - GitHub](https://github.com/Tigas9/ProjetoPWC)
