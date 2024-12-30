@@ -86,4 +86,9 @@ function displayCountries(arrayCountries){
                            </div> `;
         listaCountries.append(countryCard);
     });
+
+    function getFavoritos() {
+        var favoritos = localStorage.getItem("favoritos");
+        return favoritos ? JSON.parse(favoritos) : [];
+    }
 }
