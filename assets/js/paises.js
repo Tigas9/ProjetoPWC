@@ -104,4 +104,13 @@ function displayCountries(arrayCountries){
             localStorage.setItem("favoritos", JSON.stringify(favoritos));
         }
     }
+
+    function removeFavorito(countryCode) {
+        var favoritos = getFavoritos();
+        var index = favoritos.indexOf(countryCode);
+        if (index !== -1) {
+            favoritos.splice(index, 1);
+            localStorage.setItem("favoritos", JSON.stringify(favoritos));
+        }
+    }
 }
