@@ -80,6 +80,7 @@
 }
 
 .country-card {
+  text-decoration: none;
   background: #fff;
   border: 2px solid #ddd;
   border-radius: 10px;
