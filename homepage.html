@@ -38,72 +38,38 @@
       </nav>
       
     <!--Carrosel de imagens-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row align-items-center" style="min-height: 400px;">
-            <div class="col-md-6 ps-5">
-              <h1>Japão</h1>
-              <p>Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova Iorque às antigas ruinas de Roma,
-                cada imagem revela um lugar à espera de ser explorado.
-              </p>
-              <br>
-              <p>Quer seja para aventura, relaxante ou descoberta, encontra o teu proximo  destino conosco</p>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="assets/img/japao.png" class="img-fluid" alt="Japão">
-            </div>
-          </div>
-        </div>
-        <!--<div class="carousel-item">
-          <div class="row align-items-center" style="min-height: 400px;">
-            <div class="col-md-6 ps-5">
-              <h1>Segundo Slide</h1>
-              <p>Descrição do segundo slide. Adicione conteúdo relevante aqui.</p>
-              <a href="#" class="btn btn-primary">Descubra mais</a>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="assets/img/php.png" class="img-fluid" alt="PHP">
-            </div>
-          </div>
-        </div>-->
+      <div class="carousel-inner" id="carrousel-countries">
+        <!-- Made with JS -->
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Próximo</span>
       </button>
     </div>
 
     <!-- Escolher um pais-->
+    <br>
+    <div class="content container container-fluid">
+      <h1 class="country-title">Escolha o País</h1>
+      <p class="country-description">
+        Escolha um destino para explorar a sua singularidade, cultura e atrações. 
+        Descubra os lugares mais cativantes do mundo, cada um oferecendo experiências inesquecíveis.
+      </p>
 
-     <div class="content">
-        <h1 class="country-title">Escolha o País</h1>
-        <p class="country-description">
-            Escolha um destino para explorar a sua singularidade, cultura e atrações. 
-            Descubra os lugares mais cativantes do mundo, cada um oferecendo experiências inesquecíveis.
-        </p>
-        <div class="country-container">
-            <div class="country-card">
-                <img src="https://flagcdn.com/us.svg" alt="Estados Unidos da América" class="country-flag">
-                <p class="country-name">Estados Unidos da América</p>
-            </div>
-            <div class="country-card">
-                <img src="https://flagcdn.com/ca.svg" alt="Canadá" class="country-flag">
-                <p class="country-name">Canadá</p>
-            </div>
-            <div class="country-card">
-                <img src="https://flagcdn.com/gb.svg" alt="Reino Unido" class="country-flag">
-                <p class="country-name">Reino Unido</p>
-            </div>
-        </div>
+      <div class="country-container" id="random-countries">
+        <!-- Made with JS -->
+      </div>
+
     </div>
 
 
@@ -131,5 +97,7 @@
 
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/homepage.js"></script>
   </body>
 </html>
