@@ -45,7 +45,9 @@ function displayCountry(arrayCountry) {
     listaCountry.empty();
 
     arrayCountry.forEach(country => {
+
         var isFavorito = checkFavorito(country.cca3);
+
         var countryCard = `<div class="card">
                                 <div class="card shadow-sm">
                                     <img src="${country.flags.png}" alt="Bandeira de ${country.name.common}" class="card-img-top" style="height: 150px; object-fit: cover;">
@@ -54,10 +56,12 @@ function displayCountry(arrayCountry) {
                                         <p class="card-text">Nome Oficial do País: ${country.name.official}</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <p><a href="detalhespais.html?countryCode=${country.cca3}" class="btn btn-primary btn-sm">Ver Detalhes</a></p>
-                                                <button class="btn btn-${isFavorito ? "danger" : "secondary"} btn-sm toggle-favorito" data-country-code="${country.cca3}">
-                                                    ${isFavorito ? "Remover Favorito" : "Adicionar aos Favoritos"}
-                                                </button>
+                                                <p>
+                                                    <a href="detalhespais.html?countryCode=${country.cca3}" class="btn btn-primary btn-sm">Ver Detalhes</a>
+                                                </p>
+                                                <p>
+                                                    <a class="btn btn-${isFavorito ? "danger" : "secondary"}  btn-sm  toggle-favorito" data-country-code="${country.cca3}">${isFavorito ? "Remover Favorito" : "Adicionar aos Favoritos"}</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -78,7 +82,9 @@ function displayCountries(arrayCountries) {
     listaCountries.empty();
 
     arrayCountries.forEach(country => {
+
         var isFavorito = checkFavorito(country.cca3);
+
         var countryCard = `<div class="card">
                         <div class="card shadow-sm">
                             <img src="${country.flags.png}" alt="Bandeira de ${country.name.common}" class="card-img-top" style="height: 150px; object-fit: cover;">
@@ -87,10 +93,12 @@ function displayCountries(arrayCountries) {
                                 <p class="card-text">Nome Oficial do País: ${country.name.official}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <p><a href="detalhespais.html?countryCode=${country.cca3}" class="btn btn-primary btn-sm">Ver Detalhes</a></p>
-                                        <button class="btn btn-primary btn-sm toggle-favorito" data-country-code="${country.cca3}">
-                                            ${isFavorito ? "Remover Favorito" : "Adicionar aos Favoritos"}
-                                        </button>
+                                        <p>
+                                            <a href="detalhespais.html?countryCode=${country.cca3}" class="btn btn-primary btn-sm">Ver Detalhes</a></p>
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-${isFavorito ? "danger" : "secondary"}  btn-sm  toggle-favorito" data-country-code="${country.cca3}">${isFavorito ? "Remover Favorito" : "Adicionar aos Favoritos"}</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
