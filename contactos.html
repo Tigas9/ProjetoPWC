@@ -24,13 +24,10 @@
                   <a class="nav-link" href="paises.html">Países</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="favoritos.html">Favoritos</a>
-              </li>
-              <li class="nav-item">
                   <a class="nav-link" href="loja.html">Loja</a>
-              </li>
+              </li>             
               <li class="nav-item">
-                  <a class="nav-link" href="sobre.html">Sobre</a>
+                <a class="nav-link" href="favoritos.html">Favoritos</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link active" href="contactos.html">Contactos</a>
@@ -40,8 +37,100 @@
       </div>
     </nav>
 
+
+    <!-- Cards de Sobre Nós -->
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/img/perfilmasculino.png" class="card-img-top" alt="Gonçalo Caldeira">
+            <div class="card-body">
+              <h5 class="card-title">Gonçalo Caldeira</h5>
+              <p class="card-text">Estudante</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Número de aluno: 2231687">Mais informações</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/img/perfilmasculino.png" class="card-img-top" alt="Tiago Justino">
+            <div class="card-body">
+              <h5 class="card-title">Tiago Justino</h5>
+              <p class="card-text">Estudante</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Número de aluno: 2231677">Mais informações</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="assets/img/perfilfeminino.png" class="card-img-top" alt="Isabel Costa">
+            <div class="card-body">
+              <h5 class="card-title">Isabel Costa</h5>
+              <p class="card-text">Estudante</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Número de aluno: 2231698">Mais informações</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form de contacto -->
+
+    <br>
+
+    <div class="container container-fluid">
+      <hr>
+
+      <h1>Formulário de contacto</h1>
+
+      <form id="formContacto">
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Endereço de email</label>
+          <input type="email" class="form-control" id="email" placeholder="nome@email.com">
+        </div>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Nome">
+        </div>
+        <div class="mb-3">
+          <label for="descricao" class="form-label">Indique o motivo de contacto</label>
+          <textarea class="form-control" id="descricao" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-3">Enviar pedido</button>
+        
+      </form>
+    </div>
+
+
+    <!-- Toast -->
+
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div class="toast-container top-0 start-50 translate-middle-x">
+    
+        <!-- Toast content -->
+        <div id="submitToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="assets/img/ipl.png" style="max-width: 25px;" class="rounded me-2" alt="logo IPLeiria">
+            <strong class="me-auto">IPLeiria</strong>
+            <small class="text-body-secondary">just now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Pedido de contacto enviado com sucesso
+          </div>
+        </div>
+    
+      </div>
+    </div>
   
-    <h1>Hello, world!</h1>
 
     <!-- Footer -->
     <footer class="py-4 mt-5 border-top bg-light">
@@ -51,7 +140,7 @@
           <li class="nav-item"><a href="homepage.html" class="nav-link px-2 text-dark">Home</a></li>
           <li class="nav-item"><a href="paises.html" class="nav-link px-2 text-dark">Países</a></li>
           <li class="nav-item"><a href="loja.html" class="nav-link px-2 text-dark">Loja</a></li>
-          <li class="nav-item"><a href="sobre.html" class="nav-link px-2 text-dark">Sobre</a></li>
+          <li class="nav-item"><a href="favoritos.html" class="nav-link px-2 text-dark">Favoritos</a></li>
           <li class="nav-item"><a href="contactos.html" class="nav-link px-2 text-dark">Contactos</a></li>
         </ul>
         <div class="d-flex justify-content-center mb-3">
@@ -63,7 +152,9 @@
         <p class="text-muted">&copy; 2024 Direitos de Autor, Todos os direitos reservados</p>
       </div>
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/contactos.js"></script>
   </body>
-</html>
+</html> 
