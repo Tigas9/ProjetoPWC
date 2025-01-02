@@ -94,8 +94,9 @@ function displayCountries(arrayCountries) {
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <p>
-                                            <a href="detalhespais.html?countryCode=${country.cca3}" class="btn btn-primary btn-sm">Ver Detalhes</a></p>
+                                            <a href="detalhespais.html?cca3=${country.cca3}" class="btn btn-primary btn-sm">Ver Detalhes</a>
                                         </p>
+                                        
                                         <p>
                                             <a class="btn btn-${isFavorito ? "danger" : "secondary"}  btn-sm  toggle-favorito" data-country-code="${country.cca3}">${isFavorito ? "Remover Favorito" : "Adicionar aos Favoritos"}</a>
                                         </p>
